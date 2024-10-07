@@ -7,6 +7,53 @@
         mc:Ignorable="d"
         Title="GridWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/> <!-- Rad för StackPanel -->
+            
+            <RowDefinition Height="*"/> <!-- Rad för Grid -->
+            
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="10">
+            <TextBlock Text="Row:"
+                       FontSize="15"
+                       Width="Auto"
+                       Height="25"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
+            <TextBox Name="RowInput" 
+                     Width="50"/>
+            <TextBlock Text="Column:"
+                       FontSize="15"
+                       Width="Auto"
+                       Height="25"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
+            <TextBox Name="ColumnInput" 
+                     Width="50"/>
+            <Button Content="Apply" 
+                    FontSize="15"
+                    Click="Button_Click" 
+                    Width="100" 
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <Grid x:Name="MainGrid" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+        </Grid>
+
     </Grid>
 </Window>
