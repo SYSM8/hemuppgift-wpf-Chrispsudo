@@ -25,12 +25,13 @@ namespace Hemuppgift_WPFtemplate
 
         private void StackPanel_Click(object sender, RoutedEventArgs e)
         {
-
+            StackPanelWindow stackPanelWindow = new StackPanelWindow();
+            stackPanelWindow.Show();
         }
 
         private void Grid_Click(object sender, RoutedEventArgs e)
         {
-            // Skapa och öppna ett nytt fönster
+            // Skapa och öppnar ett GridWindow
             GridWindow gridWindow = new GridWindow();
             gridWindow.Show();
         }
