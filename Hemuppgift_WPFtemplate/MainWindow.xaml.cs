@@ -15,7 +15,8 @@ namespace Hemuppgift_WPFtemplate
 
         private void WrapPanel_Click(object sender, RoutedEventArgs e)
         {
-
+            WrapPanel wrapPanel = new WrapPanel();
+            wrapPanel.Show();
         }
 
         private void DockPanel_Click(object sender, RoutedEventArgs e)
