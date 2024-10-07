@@ -27,13 +27,16 @@ namespace Hemuppgift_WPFtemplate
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             // Hantera knappklick
-            Button clickedButton = sender as Button;
-            MessageBox.Show($"{clickedButton.Content} klickad!");
+            if (sender is Button clickedButton)
+            {
+                MessageBox.Show($"{clickedButton.Content} klickad!");
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            // Visa bilden
+            DisplayImage.Visibility = Visibility.Visible;
         }
     }
 }

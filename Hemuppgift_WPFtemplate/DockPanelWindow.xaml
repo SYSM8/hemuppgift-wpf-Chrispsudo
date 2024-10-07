@@ -10,31 +10,37 @@
     <DockPanel>
         <!-- Docka knappar -->
         <Button Content="Top Button" 
-                Width="100" 
+                Width="80" 
                 Height="30" 
                 DockPanel.Dock="Top" 
                 Click="Button_Click"/>
         <Button Content="Left Button" 
-                Width="100" 
+                Width="80" 
                 Height="30" 
                 DockPanel.Dock="Left" 
                 Click="Button_Click"/>
         <Button Content="Right Button" 
-                Width="100" 
+                Width="80" 
                 Height="30" 
                 DockPanel.Dock="Right" 
                 Click="Button_Click"/>
         <Button Content="Bottom Button" 
-                Width="100" 
+                Width="80" 
                 Height="30" 
                 DockPanel.Dock="Bottom" 
                 Click="Button_Click"/>
 
-        <!-- För att centrera knappen i mitten skippa .Dock-->
-        <Button Content="Center Button" 
-                Width="100" 
-                Height="30" 
-                Click="Button_Click_1"/>
+        <Grid>
+            <!-- Centera knappen i Grid -->
+            <Button Width="80" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click_1">
+                <TextBlock Text="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Button>
+
+            <Image  x:Name="DisplayImage" Source="C:\Users\SEFAGERSTRAC\OneDrive - Tetra Pak\Desktop\Systemutveckling.net\WPF-hemuppgift1\Hemuppgift_WPFtemplate\TrophyImage.jpg"
+                    Width="200" Height="200" Visibility="Collapsed" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center"/>
+        </Grid>
     </DockPanel>
     
 </Window>
