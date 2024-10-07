@@ -38,6 +38,7 @@
                 <Ellipse Fill="Blue" Width="40" Height="40" Margin="5"/>
                 <Ellipse Fill="Black" Width="30" Height="30" Margin="5"/>
             </WrapPanel>
+            <!--Wrap panel följer med och flyttar raderna, anpassas liksom-->
         </ScrollViewer>
     </Grid>
 
