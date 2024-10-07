@@ -30,7 +30,9 @@ namespace Hemuppgift_WPFtemplate
 
         private void Grid_Click(object sender, RoutedEventArgs e)
         {
-
+            // Skapa och öppna ett nytt fönster
+            GridWindow gridWindow = new GridWindow();
+            gridWindow.Show();
         }
     }
 }
