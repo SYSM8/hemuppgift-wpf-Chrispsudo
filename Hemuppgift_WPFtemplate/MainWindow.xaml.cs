@@ -21,7 +21,8 @@ namespace Hemuppgift_WPFtemplate
 
         private void DockPanel_Click(object sender, RoutedEventArgs e)
         {
-
+            DockPanel dockPanelWindow = new DockPanel();
+            dockPanelWindow.Show();
         }
 
         private void StackPanel_Click(object sender, RoutedEventArgs e)
